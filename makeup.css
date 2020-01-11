@@ -9,7 +9,7 @@ span {
 }
 
 input {
-  font-size: 15px;
+  font-size: 25px;
   width: 25%;
   padding: 5px 10px;
   margin: 8px 0;
@@ -57,11 +57,13 @@ div.boxes {
 .result {
   color: #0066ff;
   font-weight: bold;
+  font-size: 25px;
 }
 
 .result-negative {
   color: red;
   font-weight: bold;
+  font-size: 25px;
 }
 
 p.hint {
