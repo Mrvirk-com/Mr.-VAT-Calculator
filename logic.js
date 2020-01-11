@@ -26,6 +26,6 @@ function substractVAT() {
   vat_percentage = form.elements.vat_percentage.value;
   let vat_amount = (net_price * vat_percentage) / 100;
   let net_price_without_vat = Number(net_price) - Number(vat_amount);
-  form.elements.total_amount.value = total_amount;
+  form.elements.total_amount.value = net_price_without_vat;
   form.elements.vat_amount.value = vat_amount;
 }
