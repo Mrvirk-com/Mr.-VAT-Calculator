@@ -1,3 +1,6 @@
+addVAT();
+substractVAT();
+
 addVatInputForm.oninput = function(event) {
   event.preventDefault();
   addVAT();

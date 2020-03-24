@@ -2,31 +2,87 @@
 <html>
 
 <head>
-  <title>Online VAT Calculator</title>
+  <title>Online VAT Calculator | Value Added Tax | Calculate VAT for your products and business</title>
   <meta charset="UTF-8">
   <meta name="theme-color" content="#0066ff" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="icon.png" />
   <meta name="description" content="Online VAT Calculator. Learn, What is VAT ? How to Calculate VAT ? Discussion and Opinions on this tax." />
-  <meta name="keywords" content="VAT calculator, what is VAT, Value Added Tax, Calculate VAT">
+  <meta name="keywords" content="VAT calculator, What is VAT, Value Added Tax, Calculate VAT, Calculate VAT Online, VAT, Value Added Tax">
   <link href="makeup.css" rel="stylesheet" type="text/css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <link rel="icon" type="image/png" href="https://mrvirk.com/wp-content/uploads/2018/05/cropped-mrvirk-mobile-logo-v3-32x32.png">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128604739-6"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128604739-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-128604739-6');
+    gtag('config', 'UA-128604739-2');
   </script>
 </head>
 
 <body>
-  <div style="padding:15px;text-align:center;">
+  <div style="padding:0px;text-align:center;">
+    <!-- advertising space -->
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+
+      <a href="#">Home</a>
+      <a href="https://mrvirk.com/percentage-calculator/?utm_source=vat_calculator&utm_medium=menu">Percentage Calculator</a>
+      <a href="https://mrvirk.com/profit-calculator/?utm_source=vat_calculator&utm_medium=menu">Profit Loss Calculator</a>
+      <a href="https://sp500.mrvirk.com/?utm_source=vat_calculator&utm_medium=menu">S&P 500 Directory</a>
+    </div>
+
+    <div class="main">
+      <h1>Online <span>VAT</span> Calculator</h1>
+      <b>Online VAT Calculator. Calculate VAT for your products and business. Learn, What is VAT ? How to Calculate VAT ? Discussion and Opinions on this tax.</b>
+      <div style="overflow:auto">
+      <div class="calculator_box">
+      <div class="boxes"><h1>Calculate VAT</h1></div>
+      <div class="secondary_boxes">
+        <form id="addVatInputForm">
+          <p>
+            Product Price
+            <input type="number" name="net_price" value="100">
+            VAT %
+            <input type="number" name="vat_percentage" value="23"><br>
+            Total Amount (with VAT)
+            <input type="number" name="total_amount" value="0" class="result" readonly>
+            VAT Amount
+            <input type="number" name="vat_amount" value="0" class="result" readonly>
+          </p>
+        </form>
+      </div>
+      <div class="boxes"><b>Help:</b> add VAT to Product's Price - Used to calculate after tax price of a product</div>
+    </div>
+
+    <div class="results_box">
+    <div class="boxes"><h1>Remove VAT</h1></div>
+    <div class="secondary_boxes">
+        <form id="substractVatInputForm">
+          <p>
+            Price Paid
+            <input type="number" name="net_price" value="100">
+            VAT %
+            <input type="number" name="vat_percentage" value="23"><br>
+            Product Price (without VAT)<br>
+            <input class="result" type="number" name="total_amount" value="0" readonly>
+            VAT Amount<br>
+            <input class="result" type="number" name="vat_amount" value="0" readonly>
+          </p>
+        </form>
+      </div>
+<div class="boxes"><b>Help:</b> substract VAT from Product's Price - Used to calculate before tax price of a product</div>
+
+
+    </div>
+
+  </div>
+
+  <div style="padding:0px;text-align:center;">
     <!-- VAT Calculator | LDBR Unit -->
     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6088722940843183" data-ad-slot="8959560609"></ins>
     <script>
@@ -34,57 +90,13 @@
     </script>
   </div>
 
-  <div style="overflow:auto">
-    <div class="menu">
-
-      <a href="#">Home</a>
-      <a href="https://percentage-calculator.mrvirk.com/index.html?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">Percentage Calculator</a>
-      <a href="https://profitloss.mrvirk.com/?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">Profit Loss Calculator</a>
-      <a href="https://sp500.mrvirk.com/?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">S&P 500 Directory</a>
-    </div>
-
-    <div class="main">
-      <h1>Online <span>VAT</span> Calculator</h1>
-      <p>Online VAT Calculator. Learn, What is VAT ? How to Calculate VAT ? Discussion and Opinions on this tax.</p>
-
-      <div class="boxes">
-        <p><b>Add VAT to Product's Price - Used to calculate after tax price of a product</b></p>
-        <form id="addVatInputForm">
-          <p>
-            <input type="number" name="net_price" placeholder="Enter Your Product's Price">
-            <input type="number" name="vat_percentage" placeholder="VAT %"><br>
-            Total Amount (with VAT) =
-            <input type="text" name="total_amount" value="0" class="result" readonly> ,
-            VAT Amount =
-            <input type="text" name="vat_amount" value="0" class="result" readonly>
-          </p>
-        </form>
-      </div>
-
-      <br>
-
-      <div class="boxes">
-        <p><b>Substract VAT from Product's Price - Used to calculate before tax price of a product </b></p>
-        <form id="substractVatInputForm">
-          <p>
-            <input type="number" name="net_price" placeholder="Enter Price You Paid">
-            <input type="number" name="vat_percentage" placeholder="VAT %"><br>
-            Product Price (without VAT) =
-            <input type="text" name="total_amount" value="0" class="result" readonly> ,
-            VAT Amount =
-            <input type="text" name="vat_amount" value="0" class="result" readonly>
-          </p>
-        </form>
-      </div>
-
-      <br>
-
       <div class="boxes">
         <h2>What is VAT ?</h2>
         <p>VAT stands for Value Added Tax. It’s an indirect form of taxation by the government when goods or services are bought and sold.</p>
         <p>The VAT% may differ on country to country basis and their could be different rates say standard or reduced rate or based on categories of products and services.</p>
         <p>Per Wikipedia - VAT essentially compensates for the shared service and infrastructure provided in a certain locality by a state and funded by its taxpayers that were used in the elaboration of that product or service.</p>
       </div>
+      <br/>
       <div class="boxes">
         <h2>How to Calculate VAT ?</h2>
         <p>Calculating VAT can simple if you know the VAT % using the formula below - <br>
@@ -107,10 +119,14 @@
           So, the consumer ended up paying extra €23
         </p>
       </div>
+      <br/>
       <div class="boxes">
-        <h3>Video Explanation</h3>
+        <div style="text-align: center;">
+          <h3>Video Explanation</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/WvXlIYbnBfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+      </div>
+      <br/>
       <div class="boxes">
         <h4>Discussion and Opinion on VAT with Example</h4>
         <p>Reality – Who ends up paying the VAT ?</p>
@@ -163,9 +179,10 @@
 
   <div class="footer">
     <p>
-      A Product of <a href="https://mrvirk.com?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">Mr. Virk Media </a> | Copyright © 2019-2020 | <a
-        href="https://mrvirk.com/privacy-policy?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">Privacy Policy</a>
-      | Author: <a href="https://navjot.mrvirk.com?utm_source=VAT%20Calculator&utm_medium=menu&utm_campaign=VAT%20Calculator">Navjot Virk</a>
+      A Product of <a href="https://mrvirk.com?utm_source=vat_calculator&utm_medium=footer">Mr. Virk Media </a> | Copyright © 2019-2020 | <a
+        href="https://mrvirk.com/privacy-policy?utm_source=vat_calculator&utm_medium=footer">Privacy Policy</a>
+      | Author: <a href="https://navjot.mrvirk.com?utm_source=vat_calculator&utm_medium=footer">Navjot Virk</a>
+       | Code: <a href="https://github.com/Mrvirk-com/Mr.-VAT-Calculator">Github</a>
     </p>
 
   </div>
